@@ -1,6 +1,7 @@
 language: ruby
 rvm:
-  - 2.4.1
+  - 2.4.3
+  - 2.5.0
 gemfile:
   - Gemfile
   - test/gemfiles/activerecord50.gemfile
@@ -17,4 +18,4 @@ matrix:
   include:
     - gemfile: test/gemfiles/mysql2.gemfile
       env: ADAPTER=mysql2
-      rvm: 2.4.1
+      rvm: 2.5.0
